@@ -1,4 +1,9 @@
 # Starter pipeline
+- task: SSH@0
+  inputs:
+    runOptions: 'commands'
+    commands: 'git clone https://github.com/anilbidari/todorest.git'
+    readyTimeout: '20000'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
