@@ -40,8 +40,3 @@ steps:
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-- task: SSH@0
-  inputs:
-    runOptions: 'commands'
-    commands: 'touch anil.txt'
-    readyTimeout: '20000'
