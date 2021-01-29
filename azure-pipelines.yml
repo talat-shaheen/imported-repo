@@ -1,9 +1,18 @@
 # Starter pipeline
-- task: SSH@0
-  inputs:
-    runOptions: 'commands'
-    commands: 'git clone https://github.com/anilbidari/todorest.git'
-    readyTimeout: '20000'
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
