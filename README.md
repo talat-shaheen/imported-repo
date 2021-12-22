@@ -7,4 +7,4 @@ the class is going good..
 point to https://dev.azure.com/cloudenabled4/aaavio-agile/_boards/board/t/aaavio-agile%20Team/Stories
 hey singapore ,flying next year :)
 hey newyork..missing you :)
-hey sonarqube
+hey sonarqube12
